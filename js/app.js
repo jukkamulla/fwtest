@@ -10,11 +10,11 @@ function($routeProvider) {
             templateUrl: './partials/welcome.html',
             controller: 'welcomeCtrl'
         }).
-        /*when('/game', {
+        when('/game', {
             templateUrl: './partials/game.html',
             controller: 'gameCtrl'
         }).
-        when('/win', {
+       /* when('/win', {
             templateUrl: './partials/win.html',
             controller: 'winCtrl'
         }).

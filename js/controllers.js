@@ -12,7 +12,7 @@ fwtestControllers.controller('welcomeCtrl', [
     }
 ]);
 
-/*fwtestControllers.controller('gameCtrl', [
+fwtestControllers.controller('gameCtrl', [
     '$scope',
     'gamestate',
     '$location',
@@ -34,7 +34,7 @@ fwtestControllers.controller('welcomeCtrl', [
         };
     }
 ]);
-
+/*
 fwtestControllers.controller('winCtrl', [
     '$scope',
     'gamestate',
