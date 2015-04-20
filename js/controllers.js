@@ -5,6 +5,7 @@ fwtestControllers.controller('welcomeCtrl', [
     '$location',
     function ($scope, $location) {
         $scope.name = 'Muci';
+        $scope.user = {name: "Muci", age: 18, gender: "male"};
         $scope.play = function ( path ) {
             console.log('go to play');
             $location.path( path );
