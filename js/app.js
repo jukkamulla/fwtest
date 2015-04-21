@@ -14,6 +14,10 @@ function($routeProvider) {
             templateUrl: './partials/game.html',
             controller: 'gameCtrl'
         }).
+        when('/scoreboard', {
+            templateUrl: './partials/scoreboard.html',
+            controller: 'scoreboardCtrl'
+        }).
        /* when('/win', {
             templateUrl: './partials/win.html',
             controller: 'winCtrl'

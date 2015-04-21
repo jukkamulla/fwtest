@@ -21,18 +21,17 @@ fwtestControllers.controller('gameCtrl', [
         $scope.game = 'GAME';
         $scope.state = gamestate;
 
-        $scope.lose = function () {
-            $location.path( '/lose' );
-        };
-
-        $scope.win = function () {
-            gamestate.levelUp();
-            $location.path( '/win' );
-        };
-
         $scope.home = function () {
             $location.path( '/home' );
         };
+    }
+]);
+
+fwtestControllers.controller('scoreboardCtrl', [
+    '$scope',
+    '$location',
+    function ($scope, $location) {
+        $scope.score = 16;
     }
 ]);
 /*
