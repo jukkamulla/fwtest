@@ -15,14 +15,10 @@ fwtestControllers.controller('welcomeCtrl', [
 
 fwtestControllers.controller('gameCtrl', [
     '$scope',
-    'gamestate',
     '$location',
-    function ($scope, gamestate, $location) {
-        $scope.game = 'GAME';
-        $scope.state = gamestate;
-
-        $scope.home = function () {
-            $location.path( '/home' );
+    function ($scope, $location) {
+        $scope.scoreboard = function ( path ) {
+            $location.path( path );
         };
     }
 ]);
@@ -32,6 +28,10 @@ fwtestControllers.controller('scoreboardCtrl', [
     '$location',
     function ($scope, $location) {
         $scope.score = 16;
+
+        $scope.home = function ( path ) {
+            $location.path( path );
+        };
     }
 ]);
 /*
