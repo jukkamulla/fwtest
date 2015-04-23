@@ -18,14 +18,14 @@ function($routeProvider) {
             templateUrl: './partials/scoreboard.html',
             controller: 'scoreboardCtrl'
         }).
-       /* when('/win', {
+       when('/win', {
             templateUrl: './partials/win.html',
             controller: 'winCtrl'
         }).
         when('/lose', {
             templateUrl: './partials/lose.html',
             controller: 'loseCtrl'
-        }). */
+        }).
         otherwise({
             redirectTo: '/welcome'
         });

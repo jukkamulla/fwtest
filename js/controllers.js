@@ -17,7 +17,7 @@ fwtestControllers.controller('gameCtrl', [
     '$scope',
     '$location',
     function ($scope, $location) {
-        $scope.scoreboard = function ( path ) {
+        $scope.redirect = function ( path ) {
             $location.path( path );
         };
     }
@@ -29,32 +29,28 @@ fwtestControllers.controller('scoreboardCtrl', [
     function ($scope, $location) {
         $scope.score = 16;
 
-        $scope.home = function ( path ) {
+        $scope.redirect = function ( path ) {
             $location.path( path );
         };
     }
 ]);
-/*
+
 fwtestControllers.controller('winCtrl', [
     '$scope',
-    'gamestate',
     '$location',
-    function ($scope, gamestate, $location) {
-        $scope.state = gamestate;
-        $scope.back = function () {
-            $location.path( '/game' );
+    function ($scope, $location) {
+        $scope.win = function ( path ) {
+            $location.path( path );
         };
     }
 ]);
 
 fwtestControllers.controller('loseCtrl', [
     '$scope',
-    'gamestate',
     '$location',
-    function ($scope, gamestate, $location) {
-        $scope.state = gamestate;
-        $scope.back = function () {
-            $location.path( '/game' );
+    function ($scope, $location) {
+        $scope.lose = function ( path ) {
+            $location.path( path );
         };
     }
-]); */
+]);
